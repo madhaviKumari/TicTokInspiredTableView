@@ -17,6 +17,7 @@
 		120A4DAA2334A70F00674582 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A4DA92334A70F00674582 /* View.swift */; };
 		120A4DAC2334A7C200674582 /* TTableViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A4DAB2334A7C200674582 /* TTableViewTableViewController.swift */; };
 		120A4DAE2334A7FE00674582 /* TTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A4DAD2334A7FE00674582 /* TTableViewCell.swift */; };
+		120A4DB12334D57C00674582 /* TITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A4DB02334D57C00674582 /* TITableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		120A4DA92334A70F00674582 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		120A4DAB2334A7C200674582 /* TTableViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTableViewTableViewController.swift; sourceTree = "<group>"; };
 		120A4DAD2334A7FE00674582 /* TTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTableViewCell.swift; sourceTree = "<group>"; };
+		120A4DB02334D57C00674582 /* TITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TITableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		120A4D7A2334A68000674582 /* TicTokInspiredTableView */ = {
 			isa = PBXGroup;
 			children = (
+				120A4DAF2334D52F00674582 /* TTableView */,
 				120A4D7B2334A68000674582 /* AppDelegate.swift */,
 				120A4D7D2334A68000674582 /* ViewController.swift */,
 				120A4D7F2334A68000674582 /* Main.storyboard */,
@@ -132,6 +135,14 @@
 				120A4D9D2334A68100674582 /* Info.plist */,
 			);
 			path = TicTokInspiredTableViewUITests;
+			sourceTree = "<group>";
+		};
+		120A4DAF2334D52F00674582 /* TTableView */ = {
+			isa = PBXGroup;
+			children = (
+				120A4DB02334D57C00674582 /* TITableViewController.swift */,
+			);
+			path = TTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				120A4DB12334D57C00674582 /* TITableViewController.swift in Sources */,
 				120A4DAC2334A7C200674582 /* TTableViewTableViewController.swift in Sources */,
 				120A4D7E2334A68000674582 /* ViewController.swift in Sources */,
 				120A4DAE2334A7FE00674582 /* TTableViewCell.swift in Sources */,
