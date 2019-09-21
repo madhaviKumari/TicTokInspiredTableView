@@ -7,15 +7,16 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TTableViewCell: UITableViewCell {
 
     @IBOutlet weak var textView: UITextView!
     
     @IBOutlet weak var mImageView: UIImageView!
+
     
-    
-    
+    @IBOutlet weak var videov: PlayVideo!
     
     override func awakeFromNib() {
         super.awakeFromNib()

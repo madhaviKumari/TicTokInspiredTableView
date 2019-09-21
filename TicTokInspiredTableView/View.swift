@@ -13,11 +13,14 @@ class ViewT {
     
     var text: String
     var image: UIImage
+    var videoUrl: String
     
     
-    init(text: String, image: UIImage) {
+    
+    init(text: String, image: UIImage, videoUrl: String) {
         self.text = text
         self.image = image
+        self.videoUrl = videoUrl
     }
     
     

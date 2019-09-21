@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -41,8 +40,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="824.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cpM-Ep-LUL">
-                                            <rect key="frame" x="0.0" y="-0.5" width="414" height="825.5"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpM-Ep-LUL">
+                                            <rect key="frame" x="7" y="-1" width="407" height="69"/>
                                         </imageView>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Loading..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9XA-aY-3SN">
                                             <rect key="frame" x="7" y="11" width="387" height="38"/>
@@ -51,19 +50,23 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6j9-dF-twq" customClass="PlayVideo" customModule="TicTokInspiredTableView" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="825"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="cpM-Ep-LUL" firstAttribute="centerY" secondItem="eor-gZ-wyH" secondAttribute="centerY" id="JQ6-bd-n32"/>
-                                        <constraint firstItem="cpM-Ep-LUL" firstAttribute="centerX" secondItem="eor-gZ-wyH" secondAttribute="centerX" id="Kwp-0F-pNj"/>
+                                        <constraint firstItem="6j9-dF-twq" firstAttribute="centerY" secondItem="eor-gZ-wyH" secondAttribute="centerY" id="ClD-sY-xRl"/>
+                                        <constraint firstItem="6j9-dF-twq" firstAttribute="height" secondItem="eor-gZ-wyH" secondAttribute="height" id="Kgh-ER-406"/>
+                                        <constraint firstItem="6j9-dF-twq" firstAttribute="leading" secondItem="eor-gZ-wyH" secondAttribute="leadingMargin" constant="-20" id="Pqo-9d-h3M"/>
+                                        <constraint firstItem="6j9-dF-twq" firstAttribute="centerX" secondItem="cpM-Ep-LUL" secondAttribute="centerX" constant="4.5" id="Smw-TF-EBi"/>
+                                        <constraint firstItem="6j9-dF-twq" firstAttribute="width" secondItem="eor-gZ-wyH" secondAttribute="width" constant="16" id="eXm-ZW-lKI"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <constraints>
-                                    <constraint firstItem="cpM-Ep-LUL" firstAttribute="width" secondItem="lpO-Ep-kTl" secondAttribute="width" id="ESO-KC-0Md"/>
-                                    <constraint firstItem="cpM-Ep-LUL" firstAttribute="height" secondItem="lpO-Ep-kTl" secondAttribute="height" id="mmn-iA-P03"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="mImageView" destination="cpM-Ep-LUL" id="2bI-FD-qQ0"/>
                                     <outlet property="textView" destination="9XA-aY-3SN" id="v8a-tg-TRH"/>
+                                    <outlet property="videov" destination="6j9-dF-twq" id="mwE-If-S7m"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -75,7 +78,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6b-o4-YrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1393" y="21"/>
+            <point key="canvasLocation" x="1392.753623188406" y="20.758928571428569"/>
         </scene>
     </scenes>
 </document>
