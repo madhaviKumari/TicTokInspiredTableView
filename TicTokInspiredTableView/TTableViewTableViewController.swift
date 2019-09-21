@@ -11,9 +11,17 @@ class TTableViewTableViewController: TITableViewController{
   
         print("Starting TViewController")
         
-       loadData()
+       
     }
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        print("TViewController")
+        loadData()
+    }
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

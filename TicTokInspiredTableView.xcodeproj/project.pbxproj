@@ -19,6 +19,9 @@
 		120A4DAE2334A7FE00674582 /* TTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A4DAD2334A7FE00674582 /* TTableViewCell.swift */; };
 		120A4DB12334D57C00674582 /* TITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A4DB02334D57C00674582 /* TITableViewController.swift */; };
 		1267D9392335F9F2004DC2AF /* PlayVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267D9382335F9F2004DC2AF /* PlayVideo.swift */; };
+		1267D93B233620D9004DC2AF /* PagerTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267D93A233620D9004DC2AF /* PagerTripViewController.swift */; };
+		1267D93D23363A9E004DC2AF /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267D93C23363A9E004DC2AF /* SuperViewController.swift */; };
+		1267D94123363AEA004DC2AF /* HoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267D94023363AEA004DC2AF /* HoldViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		120A4DAD2334A7FE00674582 /* TTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTableViewCell.swift; sourceTree = "<group>"; };
 		120A4DB02334D57C00674582 /* TITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TITableViewController.swift; sourceTree = "<group>"; };
 		1267D9382335F9F2004DC2AF /* PlayVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideo.swift; sourceTree = "<group>"; };
+		1267D93A233620D9004DC2AF /* PagerTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTripViewController.swift; sourceTree = "<group>"; };
+		1267D93C23363A9E004DC2AF /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
+		1267D94023363AEA004DC2AF /* HoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		120A4D7A2334A68000674582 /* TicTokInspiredTableView */ = {
 			isa = PBXGroup;
 			children = (
+				1267D93F23363AC6004DC2AF /* ContainerView */,
 				120A4DAF2334D52F00674582 /* TTableView */,
 				120A4D7B2334A68000674582 /* AppDelegate.swift */,
 				120A4D7D2334A68000674582 /* ViewController.swift */,
@@ -118,6 +125,7 @@
 				120A4DAB2334A7C200674582 /* TTableViewTableViewController.swift */,
 				120A4DAD2334A7FE00674582 /* TTableViewCell.swift */,
 				1267D9382335F9F2004DC2AF /* PlayVideo.swift */,
+				1267D93A233620D9004DC2AF /* PagerTripViewController.swift */,
 			);
 			path = TicTokInspiredTableView;
 			sourceTree = "<group>";
@@ -146,6 +154,15 @@
 				120A4DB02334D57C00674582 /* TITableViewController.swift */,
 			);
 			path = TTableView;
+			sourceTree = "<group>";
+		};
+		1267D93F23363AC6004DC2AF /* ContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				1267D93C23363A9E004DC2AF /* SuperViewController.swift */,
+				1267D94023363AEA004DC2AF /* HoldViewController.swift */,
+			);
+			path = ContainerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,12 +297,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				120A4DB12334D57C00674582 /* TITableViewController.swift in Sources */,
+				1267D93D23363A9E004DC2AF /* SuperViewController.swift in Sources */,
 				120A4DAC2334A7C200674582 /* TTableViewTableViewController.swift in Sources */,
 				120A4D7E2334A68000674582 /* ViewController.swift in Sources */,
 				120A4DAE2334A7FE00674582 /* TTableViewCell.swift in Sources */,
 				120A4D7C2334A68000674582 /* AppDelegate.swift in Sources */,
+				1267D93B233620D9004DC2AF /* PagerTripViewController.swift in Sources */,
 				1267D9392335F9F2004DC2AF /* PlayVideo.swift in Sources */,
 				120A4DAA2334A70F00674582 /* View.swift in Sources */,
+				1267D94123363AEA004DC2AF /* HoldViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

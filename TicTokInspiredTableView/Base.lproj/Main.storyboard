@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JTM-80-hSy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kCF-XT-OGo">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,7 +27,7 @@
         <!--Table View Table View Controller-->
         <scene sceneID="xVp-Bo-9nm">
             <objects>
-                <tableViewController id="JTM-80-hSy" customClass="TTableViewTableViewController" customModule="TicTokInspiredTableView" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TTableViewTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JTM-80-hSy" customClass="TTableViewTableViewController" customModule="TicTokInspiredTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="600" sectionHeaderHeight="28" sectionFooterHeight="28" id="8O5-14-Y7R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,8 +40,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="824.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpM-Ep-LUL">
-                                            <rect key="frame" x="7" y="-1" width="407" height="69"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cpM-Ep-LUL">
+                                            <rect key="frame" x="0.0" y="-1" width="414" height="69"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="69" id="wVc-Wt-N8c"/>
+                                            </constraints>
                                         </imageView>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Loading..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9XA-aY-3SN">
                                             <rect key="frame" x="7" y="11" width="387" height="38"/>
@@ -51,7 +54,7 @@
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6j9-dF-twq" customClass="PlayVideo" customModule="TicTokInspiredTableView" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="430" height="825"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="824.5"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
                                     </subviews>
@@ -59,8 +62,10 @@
                                         <constraint firstItem="6j9-dF-twq" firstAttribute="centerY" secondItem="eor-gZ-wyH" secondAttribute="centerY" id="ClD-sY-xRl"/>
                                         <constraint firstItem="6j9-dF-twq" firstAttribute="height" secondItem="eor-gZ-wyH" secondAttribute="height" id="Kgh-ER-406"/>
                                         <constraint firstItem="6j9-dF-twq" firstAttribute="leading" secondItem="eor-gZ-wyH" secondAttribute="leadingMargin" constant="-20" id="Pqo-9d-h3M"/>
-                                        <constraint firstItem="6j9-dF-twq" firstAttribute="centerX" secondItem="cpM-Ep-LUL" secondAttribute="centerX" constant="4.5" id="Smw-TF-EBi"/>
+                                        <constraint firstItem="cpM-Ep-LUL" firstAttribute="top" secondItem="eor-gZ-wyH" secondAttribute="topMargin" constant="-12" id="VuD-33-x7L"/>
                                         <constraint firstItem="6j9-dF-twq" firstAttribute="width" secondItem="eor-gZ-wyH" secondAttribute="width" constant="16" id="eXm-ZW-lKI"/>
+                                        <constraint firstItem="cpM-Ep-LUL" firstAttribute="leading" secondItem="6j9-dF-twq" secondAttribute="leading" id="xoE-ZY-wgL"/>
+                                        <constraint firstAttribute="trailing" secondItem="cpM-Ep-LUL" secondAttribute="trailing" id="xxu-m9-l5z"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -78,7 +83,98 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6b-o4-YrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1392.753623188406" y="20.758928571428569"/>
+            <point key="canvasLocation" x="1152" y="21"/>
+        </scene>
+        <!--Pager Trip View Controller-->
+        <scene sceneID="I78-Z2-Q4f">
+            <objects>
+                <viewController restorationIdentifier="PagerTripViewController" storyboardIdentifier="PagerTripViewController" id="Eya-dw-ZsZ" customClass="PagerTripViewController" customModule="TicTokInspiredTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fWi-9j-NeG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EGY-mj-uzS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nrd-dl-3on"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4o-Ld-srs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2876.811594202899" y="20.758928571428569"/>
+        </scene>
+        <!--Super View Controller-->
+        <scene sceneID="kf5-Zm-ZO5">
+            <objects>
+                <viewController id="kCF-XT-OGo" customClass="SuperViewController" customModule="TicTokInspiredTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HyZ-EQ-5am">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHJ-wn-Znt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="940"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CTu-Sj-acJ">
+                                <rect key="frame" x="81" y="80" width="252" height="29"/>
+                                <segments>
+                                    <segment title="For you"/>
+                                    <segment title="Following"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NHJ-wn-Znt" firstAttribute="leading" secondItem="HyZ-EQ-5am" secondAttribute="leading" id="9vT-6H-YZS"/>
+                            <constraint firstItem="NHJ-wn-Znt" firstAttribute="width" secondItem="HyZ-EQ-5am" secondAttribute="width" id="HG4-OF-kbY"/>
+                            <constraint firstItem="CTu-Sj-acJ" firstAttribute="centerX" secondItem="HyZ-EQ-5am" secondAttribute="centerX" id="O2x-EV-Gof"/>
+                            <constraint firstItem="NHJ-wn-Znt" firstAttribute="top" secondItem="Cbe-Kv-DvG" secondAttribute="top" constant="-44" id="Xk7-JO-XW3"/>
+                            <constraint firstItem="CTu-Sj-acJ" firstAttribute="top" secondItem="Cbe-Kv-DvG" secondAttribute="top" constant="36" id="iu2-DB-i5k"/>
+                            <constraint firstItem="CTu-Sj-acJ" firstAttribute="leading" secondItem="Cbe-Kv-DvG" secondAttribute="leading" constant="81" id="t2e-mb-tY5"/>
+                            <constraint firstItem="NHJ-wn-Znt" firstAttribute="height" secondItem="HyZ-EQ-5am" secondAttribute="height" constant="44" id="zJT-v8-Yom"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cbe-Kv-DvG"/>
+                    </view>
+                    <connections>
+                        <outlet property="mView" destination="NHJ-wn-Znt" id="ZdU-A3-uhB"/>
+                        <outlet property="segmented" destination="CTu-Sj-acJ" id="KsK-rz-ssw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQv-gM-YW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4324.6376811594209" y="0.6696428571428571"/>
+        </scene>
+        <!--Hold View Controller-->
+        <scene sceneID="1xV-DV-DVb">
+            <objects>
+                <viewController storyboardIdentifier="HoldViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CqZ-XM-15O" customClass="HoldViewController" customModule="TicTokInspiredTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cGN-dn-7Xk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zvy-uQ-8ri"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3h-0U-4sa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5578" y="-25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MHK-Vm-NMG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="19Z-uj-ZMa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qlb-cQ-66k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Eya-dw-ZsZ" kind="relationship" relationship="rootViewController" id="KZj-p2-Yxl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjw-4e-cii" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1966.6666666666667" y="20.758928571428569"/>
         </scene>
     </scenes>
 </document>
