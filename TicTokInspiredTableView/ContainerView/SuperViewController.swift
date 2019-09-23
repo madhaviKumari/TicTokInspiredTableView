@@ -51,7 +51,7 @@ class SuperViewController: UIViewController {
     
     
     func setupSegmenter(){
-        
+        segmented.removeBorders()
        // segmented.insertSegment(withTitle: "For you", at: 0, animated: true)
         //segmented.insertSegment(withTitle: "Following", at: 1, animated: true)
         segmented.addTarget(self, action: #selector(segementerDidChange(_sender:)), for: .valueChanged)
@@ -102,4 +102,24 @@ class SuperViewController: UIViewController {
     
     
     
+}
+
+extension UISegmentedControl {
+    func removeBorders() {
+        setBackgroundImage(imageWithColor(color: backgroundColor ?? UIColor.clear), for: .normal, barMetrics: .default)
+        setBackgroundImage(imageWithColor(color: UIColor(red: 255, green: 109, blue: 1, alpha: 0.1)), for: .selected, barMetrics: .default)
+        setDividerImage(imageWithColor(color: UIColor.white), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
+    }
+    
+    // create a 1x1 image with this color
+    private func imageWithColor(color: UIColor) -> UIImage {
+        let rect = CGRect(x: 0.0, y: 0.0, width:  1.0, height: 30.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        context!.setFillColor(color.cgColor);
+        context!.fill(rect);
+        let image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        return image!
+    }
 }
