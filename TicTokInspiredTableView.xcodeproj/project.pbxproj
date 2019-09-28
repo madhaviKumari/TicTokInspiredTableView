@@ -22,6 +22,7 @@
 		1267D93B233620D9004DC2AF /* PagerTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267D93A233620D9004DC2AF /* PagerTripViewController.swift */; };
 		1267D93D23363A9E004DC2AF /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267D93C23363A9E004DC2AF /* SuperViewController.swift */; };
 		1267D94123363AEA004DC2AF /* HoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267D94023363AEA004DC2AF /* HoldViewController.swift */; };
+		BA5A8D2723388EEA00337E18 /* GradientWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5A8D2623388EEA00337E18 /* GradientWrapperView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		1267D93A233620D9004DC2AF /* PagerTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTripViewController.swift; sourceTree = "<group>"; };
 		1267D93C23363A9E004DC2AF /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		1267D94023363AEA004DC2AF /* HoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldViewController.swift; sourceTree = "<group>"; };
+		BA5A8D2623388EEA00337E18 /* GradientWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientWrapperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				1267D93C23363A9E004DC2AF /* SuperViewController.swift */,
+				BA5A8D2623388EEA00337E18 /* GradientWrapperView.swift */,
 				1267D94023363AEA004DC2AF /* HoldViewController.swift */,
 			);
 			path = ContainerView;
@@ -305,6 +308,7 @@
 				1267D93B233620D9004DC2AF /* PagerTripViewController.swift in Sources */,
 				1267D9392335F9F2004DC2AF /* PlayVideo.swift in Sources */,
 				120A4DAA2334A70F00674582 /* View.swift in Sources */,
+				BA5A8D2723388EEA00337E18 /* GradientWrapperView.swift in Sources */,
 				1267D94123363AEA004DC2AF /* HoldViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

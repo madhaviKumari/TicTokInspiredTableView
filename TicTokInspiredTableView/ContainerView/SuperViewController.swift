@@ -12,10 +12,23 @@ class SuperViewController: UIViewController {
 
     @IBOutlet weak var mView: UIView!
     @IBOutlet weak var segmented: UISegmentedControl!
+
+    @IBOutlet weak var gradientViewOne: UIView!
     
+    
+   private let gradientLayer: CAGradientLayer = {
+        let gradient = CAGradientLayer()
+        gradient.borderWidth = CGFloat(0.5)
+        gradient.borderColor = UIColor.black.cgColor
+        gradient.colors = [UIColor.black.cgColor, UIColor.white.cgColor]
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 1, y: 0)
+        gradient.type = .axial
+        return gradient
+    }()
     
     lazy var tableView: TTableViewTableViewController = {
-        
+       
         let storyBord = UIStoryboard(name: "Main", bundle: nil)
         
         let tViewController = storyBord.instantiateViewController(withIdentifier: "TTableViewTableViewController") as! TTableViewTableViewController
@@ -39,6 +52,8 @@ class SuperViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      
 
         setup()
     }
@@ -51,6 +66,8 @@ class SuperViewController: UIViewController {
     
     
     func setupSegmenter(){
+        //gradientLayer.frame = CGRect(x: 50, y: 50, width: 300, height: 50)
+        //self.segmented.layer.addSublayer(gradientLayer)
         segmented.removeBorders()
        // segmented.insertSegment(withTitle: "For you", at: 0, animated: true)
         //segmented.insertSegment(withTitle: "Following", at: 1, animated: true)
@@ -123,3 +140,5 @@ extension UISegmentedControl {
         return image!
     }
 }
+
+
